@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif:400,400i,700,700i');
+
+body {
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  @include outer-container;
+}
+
+section {
+  &.hero {
+    padding: 5em 4em;
+    background-color: rgba(105, 162, 188, 1);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
+
+.column {
+  @include span-columns(6 of 12, collapse);
+  @include omega(2n);
+  padding: 4em;
+
+  &--photo {
+    background-image: url('http://placekitten.com/g/1920/1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  p {
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+}
