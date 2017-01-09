@@ -130,15 +130,10 @@ section.worship {
 section.stewardship {
   .row {
     .column--photo {
-      background-image: url("../img/garden.jpg");
-    }
-  }
-  .row:nth-child(2) {
-    .column--photo {
       background-image: url("../img/kids-singing.jpg");
     }
   }
-  .row:nth-child(3) {
+  .row:nth-child(2) {
     .column--photo {
       background-image: url("../img/sundaes.jpg");
     }
